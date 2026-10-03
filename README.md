@@ -51,7 +51,7 @@ The CSV file is initialized automatically with these columns when the applicatio
 ### 1. Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/yatharth-kaushik/Personal-Expense-Tracker/tree/main
 ```
 
 ### 2. Open the project directory
