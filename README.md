@@ -1,74 +1,85 @@
-# 💰 Personal Expense Tracker
+<div align="center">
 
-A simple **command-line based Personal Expense Tracker** built with Python. It allows users to record, view, search, delete, and analyze their expenses. Expense data is stored locally in a CSV file.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:11998e,100:38ef7d&height=220&section=header&text=Personal%20Expense%20Tracker&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Track%20%E2%80%A2%20Analyze%20%E2%80%A2%20Save%20%E2%80%94%20right%20from%20your%20terminal&descAlignY=58&descSize=18" width="100%" />
 
-## 📌 Features
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=38EF7D&center=true&vCenter=true&width=650&lines=A+command-line+expense+manager+in+Python+%F0%9F%90%8D;Add%2C+search+and+delete+expenses+%F0%9F%92%B8;Monthly+summaries+%26+category+insights+%F0%9F%93%8A;Zero+dependencies.+Just+Python+%26+CSV+%E2%9C%A8" alt="Typing SVG" />
+</a>
 
-* ➕ Add a new expense
-* 👀 View all recorded expenses
-* 🗑️ Delete an expense
-* 🔍 Search an expense using its ID
-* 📅 Generate a monthly expense summary
-* 📊 View category-wise spending
-* 💾 Store expense data in a CSV file
-* 🆔 Automatically generate expense IDs
+<br/>
 
-## 🛠️ Technologies Used
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![CLI](https://img.shields.io/badge/Interface-CLI-black?style=for-the-badge&logo=gnubash&logoColor=white)
+![Storage](https://img.shields.io/badge/Storage-CSV-217346?style=for-the-badge&logo=files&logoColor=white)
+![Dependencies](https://img.shields.io/badge/Dependencies-None-brightgreen?style=for-the-badge)
 
-* **Python**
-* **CSV**
-* **datetime**
-* **OS**
+<img src="https://img.shields.io/github/stars/yatharth-kaushik/Personal-Expense-Tracker?style=flat-square&logo=github&color=yellow" alt="stars" />
+<img src="https://img.shields.io/github/forks/yatharth-kaushik/Personal-Expense-Tracker?style=flat-square&logo=github" alt="forks" />
+<img src="https://img.shields.io/github/last-commit/yatharth-kaushik/Personal-Expense-Tracker?style=flat-square&color=blue" alt="last commit" />
+<img src="https://img.shields.io/github/repo-size/yatharth-kaushik/Personal-Expense-Tracker?style=flat-square&color=orange" alt="repo size" />
 
-## 📂 Project Structure
+</div>
 
-```text
-Personal-Expense-Tracker/
-│
-├── main.py
-├── expenses.csv
-└── README.md
-```
+---
 
-> `expenses.csv` is automatically created by the program if it does not already exist.
+## 📖 Overview
 
-## ⚙️ How It Works
+**Personal Expense Tracker** is a simple command-line application built with Python that helps you **record, view, search, delete, and analyze** your daily expenses. All data is stored locally in a CSV file, so there's no database to set up and nothing to install.
 
-The application stores expense records in a CSV file with the following fields:
+---
 
-| Field       | Description                |
-| ----------- | -------------------------- |
-| ID          | Unique ID of the expense   |
-| Amount      | Amount spent               |
-| Category    | Expense category           |
-| Description | Description of the expense |
-| Date        | Date of the expense        |
+## ✨ Features
 
-The CSV file is initialized automatically with these columns when the application is started.
+| | Feature | Description |
+|---|---|---|
+| ➕ | **Add Expense** | Record amount, category, description and date |
+| 👀 | **View Expenses** | See everything in a neatly formatted table |
+| 🗑️ | **Delete Expense** | Remove an entry; IDs are re-numbered automatically |
+| 🔍 | **Search by ID** | Instantly look up a single expense |
+| 📅 | **Monthly Summary** | Total, count and average for any month |
+| 📊 | **Category Spending** | See how much you spend in each category |
+| 💾 | **CSV Storage** | Data saved locally in `expenses.csv` |
+| 🆔 | **Auto IDs** | Unique IDs generated for every expense |
 
-## 🚀 Installation
+---
 
-### 1. Clone the repository
+## 🛠️ Built With
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,vscode,git,github&perline=4" alt="tech" />
+
+</div>
+
+`Python` • `csv` • `datetime` • `os`
+
+---
+
+## 🚀 Getting Started
+
+**1️⃣ Clone the repository**
 
 ```bash
-git clone https://github.com/yatharth-kaushik/Personal-Expense-Tracker/tree/main
+git clone https://github.com/yatharth-kaushik/Personal-Expense-Tracker.git
 ```
 
-### 2. Open the project directory
+**2️⃣ Move into the project folder**
 
 ```bash
 cd Personal-Expense-Tracker
 ```
 
-### 3. Run the application
+**3️⃣ Run the app**
 
 ```bash
 python main.py
 ```
 
-## 🖥️ Menu
+> 💡 `expenses.csv` is created automatically the first time you run the program.
 
-When the program starts, it provides the following options:
+---
+
+## 🖥️ Main Menu
 
 ```text
 1. Add Expense
@@ -80,24 +91,12 @@ When the program starts, it provides the following options:
 7. Exit
 ```
 
-These options correspond directly to the functions implemented in the program.
+---
 
-## ➕ Add Expense
+## 📸 Demo
 
-Select option `1` to add a new expense.
-
-You will be asked to enter:
-
-```text
-Enter Amount :-
-Enter Category :-
-Enter Description :-
-Enter date :-
-```
-
-The expense is then stored in `expenses.csv` with a generated ID.
-
-### Example
+<details open>
+<summary><b>➕ Add Expense</b></summary>
 
 ```text
 Enter Amount :- 250
@@ -108,19 +107,10 @@ Enter date :- 03-10-2026
 Expense Added Successfully !
 ```
 
-## 👀 View Expenses
+</details>
 
-Select option `2` to display all recorded expenses.
-
-The expenses are displayed in a formatted table containing:
-
-* ID
-* Amount
-* Category
-* Description
-* Date
-
-Example:
+<details>
+<summary><b>👀 View Expenses</b></summary>
 
 ```text
 ======================================================================
@@ -133,39 +123,23 @@ ID   AMOUNT      CATEGORY       DESCRIPTION              DATE
 ======================================================================
 ```
 
-## 🗑️ Delete Expense
+</details>
 
-Select option `3` to delete an expense using its ID.
+<details>
+<summary><b>🔍 Search Expense</b></summary>
 
-After deletion, the program reassigns the IDs to maintain sequential numbering.
-
-## 🔍 Search Expense
-
-Select option `4` to search for an expense by its ID.
-
-If the ID exists, the corresponding expense details are displayed. If it does not exist, the program displays:
+Enter an ID to see its details. If it doesn't exist, you'll see:
 
 ```text
 Id not Found !
 ```
 
-## 📅 Monthly Summary
+</details>
 
-Select option `5` to generate a summary for a particular month and year.
+<details>
+<summary><b>📅 Monthly Summary</b></summary>
 
-The program calculates:
-
-* Total expenses
-* Number of expenses
-* Average expense
-
-The date is expected in the format:
-
-```text
-DD-MM-YYYY
-```
-
-### Example
+Enter a date in `DD-MM-YYYY` format to get that month's report.
 
 ```text
 ========================================
@@ -178,13 +152,10 @@ Average Expense : ₹175.00
 ========================================
 ```
 
-## 📊 Category-Wise Spending
+</details>
 
-Select option `6` to view the total amount spent in each category.
-
-The program also displays the overall total spending.
-
-### Example
+<details>
+<summary><b>📊 Category-Wise Spending</b></summary>
 
 ```text
 ========================================
@@ -197,21 +168,33 @@ Total               : ₹350.00
 ========================================
 ```
 
-## 💾 Data Storage
+</details>
 
-All expense records are stored locally in:
+---
+
+## 📂 Project Structure
 
 ```text
-expenses.csv
+Personal-Expense-Tracker/
+│
+├── main.py          # Application code
+├── expenses.csv     # Auto-generated expense data
+└── README.md        # Project documentation
 ```
 
-The program uses Python's built-in `csv` module to read and write expense data.
+---
 
-No external database is required.
+## 💾 Data Format
 
-## 📋 CSV Format
+Expenses are stored in `expenses.csv`:
 
-The stored data follows this structure:
+| Field | Description |
+|---|---|
+| `Id` | Unique ID of the expense |
+| `Amount` | Amount spent |
+| `Category` | Expense category |
+| `Description` | What the expense was for |
+| `Date` | Date of the expense (`DD-MM-YYYY`) |
 
 ```csv
 Id,Amount,Category,Description,Date
@@ -219,60 +202,56 @@ Id,Amount,Category,Description,Date
 2,100.0,Travel,Bus fare,03-10-2026
 ```
 
-## 🧠 Concepts Used
+---
 
-This project demonstrates several fundamental Python concepts:
+## 🧠 Concepts Practiced
 
-* Functions
-* Loops
-* Conditional statements
-* Lists
-* Dictionaries
-* File handling
-* CSV file handling
-* Exception-free input processing
-* Date and time handling
-* String formatting
-* Basic data analysis
-
-## 📦 Python Modules Used
-
-### `os`
-
-Used to check whether the CSV file exists before creating it.
-
-### `csv`
-
-Used to read and write expense records.
-
-### `datetime`
-
-Used to process expense dates and generate monthly summaries.
-
-These modules are imported directly in the project.
-
-## 🔮 Future Improvements
-
-Possible improvements for future versions:
-
-* Add input validation
-* Add expense editing/updating
-* Add budget management
-* Add date-based expense searching
-* Add graphical reports and charts
-* Add sorting and filtering
-* Add a GUI version
-* Add database support such as SQLite
-* Add data export options
-
-## 🎯 Project Purpose
-
-This project was created to practice Python programming concepts while building a practical command-line application for managing personal expenses.
-
-## 👨‍💻 Author
-
-**Yatharth Kaushik**
+![Functions](https://img.shields.io/badge/Functions-informational?style=flat-square)
+![Loops](https://img.shields.io/badge/Loops-informational?style=flat-square)
+![Conditionals](https://img.shields.io/badge/Conditionals-informational?style=flat-square)
+![Lists](https://img.shields.io/badge/Lists-informational?style=flat-square)
+![Dictionaries](https://img.shields.io/badge/Dictionaries-informational?style=flat-square)
+![File Handling](https://img.shields.io/badge/File%20Handling-informational?style=flat-square)
+![CSV](https://img.shields.io/badge/CSV-informational?style=flat-square)
+![Date & Time](https://img.shields.io/badge/Date%20%26%20Time-informational?style=flat-square)
+![String Formatting](https://img.shields.io/badge/String%20Formatting-informational?style=flat-square)
+![Data Analysis](https://img.shields.io/badge/Basic%20Data%20Analysis-informational?style=flat-square)
 
 ---
 
-⭐ If you find this project useful, consider giving the repository a star!
+## 🔮 Roadmap
+
+- [ ] Input validation
+- [ ] Edit / update expenses
+- [ ] Budget management
+- [ ] Search by date
+- [ ] Graphical reports and charts
+- [ ] Sorting and filtering
+- [ ] GUI version
+- [ ] SQLite database support
+- [ ] Export data
+
+---
+
+## 🎯 Project Purpose
+
+Created to practice Python programming concepts while building a practical command-line application for managing personal expenses.
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Yatharth Kaushik**
+
+<a href="https://github.com/yatharth-kaushik"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/yatharth-kaushik-92920a421/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+
+<br/><br/>
+
+⭐ **If you find this project useful, consider giving it a star!** ⭐
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38ef7d,100:11998e&height=120&section=footer" width="100%" />
+
+</div>
